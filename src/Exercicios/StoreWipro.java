@@ -44,9 +44,15 @@ public class StoreWipro {
 			System.out.printf("%5s %20s %20s %20s\n", pNomes[carrinhoIndex.get(i)], carrinhoQtde.get(i), pPreco[carrinhoIndex.get(i)], vlrTotal);
 			vlrTotalCarrinho += vlrTotal; 
 		}
-		System.out.println("Vlr total do carrinho: " + vlrTotalCarrinho);
-		System.out.println("Imposto de 9% cobrado no valor total da compra: "+(vlrTotalCarrinho * 0.09));
-		System.out.println("\nOpções de pagamento\n\n");
+		System.out.println();
+		System.out.println("Vlr total do carrinho: " + vlrTotalCarrinho+"\n");
+		System.out.println("Imposto de 9% cobrado no valor total da compra: "+(vlrTotalCarrinho * 0.09)+"\n");
+		System.out.println("\nOpções de pagamento\n");
+		System.out.println("[1]À vista em dinheiro ou cartão MASTERCARD, 20% de desconto.");
+		System.out.println("[2]À vista no cartão de crédito, 15% de desconto.");
+		System.out.println("[3]Em 2x, preço normal de etiqueta sem juros.");
+		System.out.println("[4]Em 3x, preço normal de etiqueta mais juros de 10%.\n");
+		System.out.println("Qual seria a forma de pagamento?");
 		input.close();
 	}
 
