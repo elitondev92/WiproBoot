@@ -21,7 +21,7 @@ public class Media {
         }else {
             System.out.println("O aluno " + nomeAluno + " foi reprovado!!");
         }
-
+        entrada.close();
         System.out.println("média: " + media);
 	}
 
